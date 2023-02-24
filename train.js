@@ -35,7 +35,7 @@ async function runChatbot() {
 }
 function getName(input) {
     const words = input.toLowerCase().split(' ');
-    if (words.includes('my') && words.includes('name') && words.includes('is') && words.length > 4) {
+    if (words.includes('my') && words.includes('name') && words.includes('is') && words.length > 3) {
       return words[words.indexOf('is') + 1];
     } else {
       return null;
